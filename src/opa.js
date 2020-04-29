@@ -54,8 +54,13 @@ function builtinPlus(a, b) {
     return a+b;
 }
 
+function builtinCount(arr) {
+    return arr.length;
+}
+
 const builtinFuncs = {
     plus: builtinPlus,
+    count: builtinCount,
 }
 
 // _builtinCall dispatches the built-in function. The built-in function
